@@ -1,18 +1,971 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Tetali Ayyappa Venkata Manohar Reddy — Mainframe Developer portfolio"><title>Ayyappa Reddy | Mainframe Developer</title>
-<style>
-:root{--bg:#050816;--bg2:#090d20;--panel:rgba(15,23,42,.62);--txt:#f5f7ff;--muted:#9ca9c0;--cyan:#55e6ff;--violet:#9b7cff;--green:#67f0ad;--line:rgba(255,255,255,.1);--max:1180px}*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;background:radial-gradient(circle at 12% 8%,rgba(85,230,255,.12),transparent 28%),radial-gradient(circle at 88% 12%,rgba(155,124,255,.14),transparent 30%),var(--bg);color:var(--txt);overflow-x:hidden}body:before{content:"";position:fixed;inset:0;z-index:-2;opacity:.16;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:48px 48px}a{color:inherit;text-decoration:none}.wrap{width:min(92%,var(--max));margin:auto}.nav{position:fixed;z-index:20;left:0;right:0;top:0;padding:16px 0;transition:.3s}.nav.scrolled{background:rgba(5,8,22,.76);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.navin{display:flex;align-items:center;justify-content:space-between}.logo{font-weight:900;letter-spacing:.7px}.logo i{font-style:normal;color:var(--cyan)}.links{display:flex;gap:24px;color:var(--muted);font-size:.9rem}.links a:hover{color:white}.menu{display:none;background:transparent;color:white;border:1px solid var(--line);border-radius:10px;padding:8px 10px}.hero{min-height:100vh;display:grid;align-items:center;padding:120px 0 70px}.heroGrid{display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:center}.kicker{display:inline-flex;align-items:center;gap:8px;color:var(--cyan);border:1px solid rgba(85,230,255,.22);background:rgba(85,230,255,.05);border-radius:999px;padding:7px 12px;font-size:.76rem;font-weight:900;letter-spacing:1.4px;text-transform:uppercase}.dot{width:7px;height:7px;background:var(--green);border-radius:50%;box-shadow:0 0 16px var(--green);animation:pulse 1.5s infinite}@keyframes pulse{50%{opacity:.3;transform:scale(.65)}}h1{font-size:clamp(3rem,7vw,6.2rem);line-height:.96;letter-spacing:-4px;margin:22px 0}.grad{background:linear-gradient(100deg,#fff 18%,var(--cyan) 57%,var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{color:var(--muted);font-size:1.12rem;max-width:700px}.hero p b{color:#e2ebff}.buttons{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.04);transition:.25s}.btn:hover{transform:translateY(-3px);border-color:rgba(85,230,255,.4);box-shadow:0 12px 35px rgba(85,230,255,.08)}.primary{background:linear-gradient(100deg,var(--cyan),#9ee9ff);color:#04101a;border:0;font-weight:900}.heroCard{display:grid;place-items:center;position:relative}.ring{width:min(390px,82vw);aspect-ratio:1;border-radius:50%;padding:7px;background:conic-gradient(from 180deg,var(--cyan),transparent 30%,var(--violet),transparent 76%,var(--cyan));animation:spin 12s linear infinite;box-shadow:0 0 75px rgba(85,230,255,.13)}@keyframes spin{to{transform:rotate(360deg)}}.photoBox{height:100%;width:100%;border-radius:50%;padding:8px;background:#071021}.photo{width:100%;height:100%;object-fit:cover;object-position:center top;border-radius:50%;filter:saturate(1.1) contrast(1.05)}.badge{position:absolute;left:8px;bottom:14px;background:rgba(5,9,23,.86);backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:14px;padding:11px 14px}.badge small{display:block;color:var(--muted)}.badge strong{color:var(--cyan)}section{padding:110px 0}.eyebrow{font-size:.75rem;letter-spacing:2px;color:var(--cyan);font-weight:900;text-transform:uppercase}.head{margin-bottom:36px}.head h2{font-size:clamp(2rem,4vw,3.2rem);letter-spacing:-1.5px;margin-top:7px}.sub{color:var(--muted);max-width:700px;margin-top:8px}.glass{background:linear-gradient(145deg,rgba(17,27,50,.72),rgba(8,14,29,.66));border:1px solid var(--line);border-radius:22px;backdrop-filter:blur(14px);box-shadow:0 25px 80px rgba(0,0,0,.28)}.about{display:grid;grid-template-columns:1.2fr .8fr;gap:20px}.card{padding:28px}.card p{color:var(--muted)}.quick{display:grid;grid-template-columns:1fr 1fr;gap:12px}.mini{padding:18px}.mini strong{display:block;font-size:1.35rem}.mini span{color:var(--muted);font-size:.82rem}.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.skill{padding:20px;transition:.25s;position:relative;overflow:hidden}.skill:hover{transform:translateY(-6px);border-color:rgba(85,230,255,.35)}.skill:after{content:"";position:absolute;width:80px;height:80px;right:-35px;top:-35px;background:var(--cyan);filter:blur(45px);opacity:.1}.skill small{display:block;color:var(--muted);margin-top:4px}.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.project{padding:28px;min-height:260px;transition:.3s}.project:hover{transform:translateY(-7px);border-color:rgba(155,124,255,.35)}.projectTop{display:flex;justify-content:space-between;gap:20px}.num{color:var(--cyan);font-weight:900}.project p,.project li{color:var(--muted)}.project p{margin:12px 0}.project ul{padding-left:20px}.project li{margin:7px 0}.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:18px}.tag{font-size:.74rem;border:1px solid var(--line);padding:5px 9px;border-radius:999px;background:rgba(255,255,255,.035);color:#dce8ff}.timeline{border-left:1px solid rgba(85,230,255,.25);padding-left:25px}.item{position:relative;margin-bottom:27px}.item:before{content:"";position:absolute;left:-31px;top:8px;width:10px;height:10px;border-radius:50%;background:var(--cyan);box-shadow:0 0 18px rgba(85,230,255,.8)}.item span{color:var(--cyan);font-size:.82rem;font-weight:800}.item h3{margin:5px 0}.item p{color:var(--muted)}.resume{padding:30px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}.contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}.contactRow{padding:16px 0;border-bottom:1px solid var(--line)}.contactRow small{display:block;color:var(--muted);margin-bottom:3px}footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:var(--muted)}.reveal{opacity:0;transform:translateY(24px);transition:.7s ease}.reveal.show{opacity:1;transform:none}.cursor{position:fixed;width:22px;height:22px;border:1px solid rgba(85,230,255,.7);border-radius:50%;pointer-events:none;z-index:100;transform:translate(-50%,-50%);display:none;mix-blend-mode:screen;transition:.15s}@media(pointer:fine){.cursor{display:block}}#particles{position:fixed;inset:0;pointer-events:none;z-index:-1}.particle{position:absolute;width:2px;height:2px;border-radius:50%;background:var(--cyan);animation:float linear infinite;opacity:.35}@keyframes float{from{transform:translateY(105vh)}to{transform:translateY(-10vh)}}@media(max-width:850px){.heroGrid,.about,.contact{grid-template-columns:1fr}.heroCard{order:-1}.ring{width:290px}.skills{grid-template-columns:repeat(2,1fr)}.projects{grid-template-columns:1fr}.links{display:none}.menu{display:block}.nav.open .links{display:flex;position:absolute;top:65px;left:4%;right:4%;padding:18px;flex-direction:column;background:rgba(7,11,25,.96);border:1px solid var(--line);border-radius:16px}}@media(max-width:520px){.skills,.quick{grid-template-columns:1fr}.resume{grid-template-columns:1fr}h1{letter-spacing:-2.5px}}
-</style></head>
-<body><div id="particles"></div><div class="cursor" id="cursor"></div>
-<header class="nav" id="nav"><div class="wrap navin"><a class="logo" href="#home">AYYAPPA<i>.</i></a><button class="menu" id="menu">☰</button><nav class="links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#journey">Journey</a><a href="#contact">Contact</a></nav></div></header>
-<main>
-<section class="hero" id="home"><div class="wrap heroGrid"><div class="reveal"><div class="kicker"><span class="dot"></span> Open to Mainframe Opportunities</div><h1>Mainframe <span class="grad">Developer.</span><br>Future-focused.</h1><p>I'm <b>Tetali Ayyappa Venkata Manohar Reddy</b>, an Information Technology graduate focused on <b>COBOL, JCL, DB2, VSAM, CICS and SQL</b>, with additional AWS and basic Python knowledge.</p><div class="buttons"><a class="btn primary" href="#projects">Explore My Work ↓</a><a class="btn" href="Ayyappa_Reddy_Resume.pdf" target="_blank">View Resume ↗</a><a class="btn" href="mailto:ramaaruna2378@gmail.com">Let's Connect</a></div></div><div class="heroCard reveal"><div class="ring"><div class="photoBox"><img class="photo" src="Me.jpeg" alt="Tetali Ayyappa Venkata Manohar Reddy"></div></div><div class="badge"><small>Career focus</small><strong>Mainframe Developer • SQL</strong></div></div></div></section>
-<section id="about"><div class="wrap"><div class="head reveal"><div class="eyebrow">01 — About</div><h2>Enterprise mindset. Continuous learning.</h2><p class="sub">A focused technical profile built around dependable enterprise systems, databases and cloud fundamentals.</p></div><div class="about"><div class="glass card reveal"><p>I am a B.Tech Information Technology graduate looking to begin my career as a Mainframe Developer. I have learned core IBM Mainframe technologies including COBOL, JCL, DB2, VSAM and CICS, along with SQL.</p><br><p>I also have exposure to AWS cloud services and basic Python programming. I enjoy learning new technologies, solving technical problems and growing through real-world enterprise development.</p></div><div class="quick"><div class="glass mini reveal"><strong>2025</strong><span>B.Tech IT Graduate</span></div><div class="glass mini reveal"><strong>7.0</strong><span>CGPA</span></div><div class="glass mini reveal"><strong>5+</strong><span>Mainframe technologies</span></div><div class="glass mini reveal"><strong>AWS</strong><span>Cloud fundamentals</span></div></div></div></div></section>
-<section id="skills"><div class="wrap"><div class="head reveal"><div class="eyebrow">02 — Toolkit</div><h2>Technologies I know.</h2><p class="sub">A practical stack for enterprise application development and cloud fundamentals.</p></div><div class="skills"><div class="glass skill reveal"><b>COBOL</b><small>Mainframe programming</small></div><div class="glass skill reveal"><b>JCL</b><small>Job Control Language</small></div><div class="glass skill reveal"><b>DB2</b><small>Mainframe database</small></div><div class="glass skill reveal"><b>VSAM</b><small>File management</small></div><div class="glass skill reveal"><b>CICS</b><small>Online transaction processing</small></div><div class="glass skill reveal"><b>SQL</b><small>Queries & database concepts</small></div><div class="glass skill reveal"><b>AWS</b><small>Cloud fundamentals</small></div><div class="glass skill reveal"><b>Python</b><small>Basic programming</small></div><div class="glass skill reveal"><b>Java</b><small>Programming fundamentals</small></div><div class="glass skill reveal"><b>z/OS</b><small>Mainframe environment</small></div><div class="glass skill reveal"><b>Git & GitHub</b><small>Version control</small></div><div class="glass skill reveal"><b>Mainframe Utilities</b><small>IDCAMS, IEFBR14, IEBGENER, SORT & more</small></div></div></div></section>
-<section id="projects"><div class="wrap"><div class="head reveal"><div class="eyebrow">03 — Projects</div><h2>Things I've built & explored.</h2><p class="sub">Selected projects from my academic and technical journey.</p></div><div class="projects"><article class="glass project reveal"><div class="projectTop"><h3>Fire Detection System using YOLOv8</h3><span class="num">01</span></div><p>Real-time fire and smoke detection system using Python, YOLOv8 and OpenCV.</p><ul><li>Achieved 82.35% mAP using transfer learning and hyperparameter tuning.</li><li>Implemented real-time video processing with response time under 3 seconds.</li></ul><div class="tags"><span class="tag">Python</span><span class="tag">YOLOv8</span><span class="tag">OpenCV</span></div></article><article class="glass project reveal"><div class="projectTop"><h3>Three-Tier Web Architecture on AWS</h3><span class="num">02</span></div><p>Scalable three-tier architecture designed around AWS cloud best practices.</p><ul><li>Configured EC2 for web/application layers and RDS for the database layer.</li><li>Implemented VPC, public/private subnets, Internet Gateway and Security Groups.</li></ul><div class="tags"><span class="tag">AWS</span><span class="tag">EC2</span><span class="tag">RDS</span><span class="tag">VPC</span></div></article><article class="glass project reveal"><div class="projectTop"><h3>Mainframe Development Training</h3><span class="num">03</span></div><p>Focused learning across the core IBM Mainframe technologies used in enterprise systems.</p><ul><li>COBOL programming, JCL and common z/OS utilities.</li><li>DB2, VSAM and CICS concepts for batch and online application development.</li></ul><div class="tags"><span class="tag">COBOL</span><span class="tag">JCL</span><span class="tag">DB2</span><span class="tag">VSAM</span><span class="tag">CICS</span></div></article><article class="glass project reveal"><div class="projectTop"><h3>SQL & Database Practice</h3><span class="num">04</span></div><p>Focused learning in SQL and database concepts supporting enterprise application development.</p><ul><li>Query writing and relational database fundamentals.</li><li>DB2 concepts aligned with Mainframe development learning.</li></ul><div class="tags"><span class="tag">SQL</span><span class="tag">DB2</span><span class="tag">Database</span></div></article></div></div></section>
-<section id="journey"><div class="wrap"><div class="head reveal"><div class="eyebrow">04 — Journey</div><h2>Education, experience & certifications.</h2><p class="sub">The milestones supporting my transition into IT and Mainframe development.</p></div><div class="glass card timeline reveal"><div class="item"><span>2021 — 2025</span><h3>Bachelor of Technology — Information Technology</h3><p>Aditya College of Engineering and Technology • CGPA 7.0</p></div><div class="item"><span>July 2025 — November 2025</span><h3>Chat Sales Representative — TTEC</h3><p>Customer interaction, problem solving, product/service communication and handling multiple chats.</p></div><div class="item"><h3>AWS Certified Cloud Practitioner</h3><p>Amazon Web Services (AWS)</p></div><div class="item"><h3>Introduction to Internet of Things (IoT)</h3><p>NPTEL</p></div><div class="item"><h3>Python HackerRank Certified</h3><p>HackerRank</p></div><div class="item"><h3>Java HackerRank Certified</h3><p>HackerRank</p></div><div class="item"><h3>IBM Mainframe IT Training</h3><p>Vidushi Gyanpeeth IT Training</p></div></div></div></section>
-<section><div class="wrap"><div class="glass resume reveal"><div><div class="eyebrow">05 — Resume</div><h2 style="font-size:2rem">Complete profile, one click away.</h2><p class="sub">View or download my resume.</p></div><a class="btn primary" href="Ayyappa_Reddy_Resume.pdf" target="_blank" download>Download Resume ↓</a></div></div></section>
-<section id="contact"><div class="wrap"><div class="head reveal"><div class="eyebrow">06 — Contact</div><h2>Let's build something reliable.</h2><p class="sub">I am open to Mainframe Developer and related IT opportunities.</p></div><div class="contact"><div class="glass card reveal"><div class="contactRow"><small>Email</small><a href="mailto:ramaaruna2378@gmail.com">ramaaruna2378@gmail.com</a></div><div class="contactRow"><small>Phone</small><a href="tel:+919517995555">+91 9517995555</a></div><div class="contactRow"><small>Location</small>Hyderabad, India</div></div><div class="glass card reveal"><h3>Career focus</h3><p style="margin-top:9px">Mainframe Developer • COBOL • JCL • DB2 • VSAM • CICS • SQL</p><div class="tags"><span class="tag">Open to Work</span><span class="tag">Mainframe</span><span class="tag">SQL</span><span class="tag">AWS</span></div></div></div></div></section>
-</main><footer><div class="wrap">© 2026 Tetali Ayyappa Venkata Manohar Reddy • Built for a modern IT portfolio.</div></footer>
-<script>const nav=document.getElementById('nav'),menu=document.getElementById('menu');addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>30));menu.onclick=()=>nav.classList.toggle('open');document.querySelectorAll('.links a').forEach(a=>a.onclick=()=>nav.classList.remove('open'));const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});document.querySelectorAll('.reveal').forEach(x=>io.observe(x));const p=document.getElementById('particles');for(let i=0;i<70;i++){let s=document.createElement('span');s.className='particle';s.style.left=Math.random()*100+'%';s.style.animationDuration=12+Math.random()*25+'s';s.style.animationDelay=-Math.random()*25+'s';p.appendChild(s)}const c=document.getElementById('cursor');addEventListener('pointermove',e=>{c.style.left=e.clientX+'px';c.style.top=e.clientY+'px'});document.querySelectorAll('a,button,.skill,.project').forEach(x=>{x.onmouseenter=()=>{c.style.width='36px';c.style.height='36px'};x.onmouseleave=()=>{c.style.width='22px';c.style.height='22px'}});</script>
-</body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetali Ayyappa Venkata Manohar Reddy | Mainframe & Cloud Developer</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --bg-dark: #080c14;
+            --bg-card: rgba(15, 23, 42, 0.65);
+            --bg-card-hover: rgba(23, 32, 54, 0.85);
+            --border: rgba(255, 255, 255, 0.08);
+            --border-glow: rgba(56, 189, 248, 0.3);
+            
+            --cyan: #38bdf8;
+            --cyan-glow: rgba(56, 189, 248, 0.4);
+            --blue: #3b82f6;
+            --accent: #06b6d4;
+            
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --text-dim: #64748b;
+            
+            --font-main: 'Plus Jakarta Sans', sans-serif;
+            --font-code: 'JetBrains Mono', monospace;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            font-family: var(--font-main);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* Canvas Background */
+        #dotsCanvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        /* Container Layout */
+        .container {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            background: rgba(8, 12, 20, 0.75);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            color: var(--text-main);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo span {
+            color: var(--cyan);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.925rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--cyan);
+        }
+
+        .btn-header {
+            padding: 0.6rem 1.2rem;
+            border-radius: 8px;
+            background: rgba(56, 189, 248, 0.1);
+            border: 1px solid var(--border-glow);
+            color: var(--cyan);
+            font-weight: 600;
+            font-size: 0.875rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-header:hover {
+            background: var(--cyan);
+            color: var(--bg-dark);
+            box-shadow: 0 0 20px var(--cyan-glow);
+        }
+
+        /* Hero Section */
+        .hero-section {
+            min-height: 100vh;
+            padding-top: 140px;
+            padding-bottom: 80px;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .badge-status {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 14px;
+            background: rgba(56, 189, 248, 0.08);
+            border: 1px solid var(--border-glow);
+            border-radius: 30px;
+            color: var(--cyan);
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .pulse-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--cyan);
+            border-radius: 50%;
+            box-shadow: 0 0 10px var(--cyan);
+            animation: pulse 1.8s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(56, 189, 248, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(56, 189, 248, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(56, 189, 248, 0); }
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.15;
+            letter-spacing: -1.5px;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-title span {
+            background: linear-gradient(135deg, var(--cyan) 0%, var(--blue) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-description {
+            font-size: 1.125rem;
+            color: var(--text-muted);
+            margin-bottom: 2.5rem;
+            max-width: 600px;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            padding: 0.85rem 1.8rem;
+            border-radius: 10px;
+            background: linear-gradient(135deg, var(--cyan), var(--blue));
+            color: #fff;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 10px 25px -5px var(--cyan-glow);
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px -5px var(--cyan-glow);
+        }
+
+        .btn-secondary {
+            padding: 0.85rem 1.8rem;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border);
+            color: var(--text-main);
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--cyan);
+            color: var(--cyan);
+        }
+
+        /* Advanced Glassmorphic Cyber Hero Photo Card (Replaces basic rotater) */
+        .photo-card-wrapper {
+            position: relative;
+            perspective: 1000px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .photo-card {
+            position: relative;
+            width: 320px;
+            height: 400px;
+            border-radius: 24px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            backdrop-filter: blur(20px);
+            padding: 12px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            transition: transform 0.4s ease, border-color 0.4s ease;
+            transform-style: preserve-3d;
+        }
+
+        .photo-card:hover {
+            border-color: var(--cyan);
+            transform: translateY(-8px) rotateY(4deg) rotateX(4deg);
+        }
+
+        .photo-frame {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border-radius: 18px;
+            overflow: hidden;
+        }
+
+        .photo-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(15%) contrast(105%);
+            transition: filter 0.3s ease;
+        }
+
+        .photo-card:hover img {
+            filter: grayscale(0%) contrast(100%);
+        }
+
+        /* Floating Cyber Badges around photo */
+        .floating-tech-badge {
+            position: absolute;
+            padding: 8px 14px;
+            background: rgba(15, 23, 42, 0.9);
+            border: 1px solid var(--border-glow);
+            backdrop-filter: blur(12px);
+            border-radius: 12px;
+            color: var(--cyan);
+            font-family: var(--font-code);
+            font-size: 0.8rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            animation: float 4s ease-in-out infinite;
+        }
+
+        .badge-1 { top: 20px; left: -30px; animation-delay: 0s; }
+        .badge-2 { bottom: 40px; right: -30px; animation-delay: 2s; }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* Section Styling */
+        section {
+            padding: 100px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .section-header {
+            margin-bottom: 3.5rem;
+        }
+
+        .section-subtitle {
+            color: var(--cyan);
+            font-family: var(--font-code);
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .section-title {
+            font-size: 2.25rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+
+        /* Glass Cards */
+        .glass-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            backdrop-filter: blur(16px);
+            border-radius: 20px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .glass-card:hover {
+            border-color: var(--border-glow);
+            background: var(--bg-card-hover);
+            transform: translateY(-4px);
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--cyan);
+            font-family: var(--font-code);
+        }
+
+        .stat-label {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-top: 0.25rem;
+        }
+
+        /* Competitive Advantage / Added Section */
+        .value-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .value-card {
+            display: flex;
+            gap: 1.25rem;
+            align-items: flex-start;
+        }
+
+        .value-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: rgba(56, 189, 248, 0.1);
+            color: var(--cyan);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            border: 1px solid var(--border-glow);
+        }
+
+        /* Skills Interactive Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skill-category {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .skill-category-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+        }
+
+        .skill-tag {
+            padding: 0.4rem 0.9rem;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--border);
+            font-family: var(--font-code);
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            transition: all 0.2s ease;
+        }
+
+        .skill-tag:hover {
+            color: var(--cyan);
+            border-color: var(--border-glow);
+            background: rgba(56, 189, 248, 0.08);
+        }
+
+        /* Projects */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .project-tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+
+        .project-tag {
+            font-family: var(--font-code);
+            font-size: 0.75rem;
+            color: var(--cyan);
+            background: rgba(56, 189, 248, 0.08);
+            padding: 4px 10px;
+            border-radius: 6px;
+        }
+
+        /* Journey Timeline */
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--border);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2.5rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2rem;
+            top: 6px;
+            transform: translateX(-50%);
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--cyan);
+            box-shadow: 0 0 10px var(--cyan);
+        }
+
+        .timeline-date {
+            font-family: var(--font-code);
+            font-size: 0.85rem;
+            color: var(--cyan);
+            margin-bottom: 0.25rem;
+        }
+
+        /* Contact & Footer */
+        .contact-box {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-link-btn {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 0.8rem 1.4rem;
+            border-radius: 12px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-main);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .contact-link-btn:hover {
+            border-color: var(--cyan);
+            color: var(--cyan);
+            transform: translateY(-2px);
+        }
+
+        footer {
+            padding: 2rem 0;
+            text-align: center;
+            color: var(--text-dim);
+            font-size: 0.875rem;
+            border-top: 1px solid var(--border);
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .hero-description {
+                margin: 0 auto 2.5rem auto;
+            }
+            .hero-cta {
+                justify-content: center;
+            }
+            .photo-card-wrapper {
+                margin-top: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Animated Canvas Dot Grid Background -->
+    <canvas id="dotsCanvas"></canvas>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container nav-inner">
+            <a href="#home" class="logo">
+                <i data-lucide="terminal" style="color: var(--cyan)"></i> AYYAPPA<span>.REDDY</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#advantages">Strengths</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#journey">Journey</a></li>
+            </ul>
+            <a href="mailto:ramaaruna2378@gmail.com" class="btn-header">Let's Connect</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-grid">
+                <div>
+                    <div class="badge-status">
+                        <span class="pulse-dot"></span>
+                        Open to Mainframe & IT Opportunities
+                    </div>
+                    <h1 class="hero-title">
+                        Mainframe Developer.<br>
+                        <span>Cloud & Data Agile.</span>
+                    </h1>
+                    <p class="hero-description">
+                        I'm <b>Tetali Ayyappa Venkata Manohar Reddy</b> — an Information Technology Graduate specializing in <b>IBM Mainframe systems (COBOL, JCL, DB2, VSAM, CICS)</b> combined with modern <b>AWS Cloud fundamentals</b> and enterprise execution mindset.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn-primary">
+                            Explore Projects <i data-lucide="arrow-down"></i>
+                        </a>
+                        <a href="Ayyappa_Reddy_Resume.pdf" target="_blank" class="btn-secondary">
+                            View Resume <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Upgraded Glassmorphic Photo Card -->
+                <div class="photo-card-wrapper">
+                    <div class="floating-tech-badge badge-1">
+                        <i data-lucide="cpu"></i> z/OS • COBOL
+                    </div>
+                    <div class="floating-tech-badge badge-2">
+                        <i data-lucide="cloud"></i> AWS Certified
+                    </div>
+
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="Me.jpeg" alt="Tetali Ayyappa Venkata Manohar Reddy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About & Stats -->
+        <section id="about">
+            <div class="section-header">
+                <div class="section-subtitle"><i data-lucide="user"></i> 01 — Overview</div>
+                <h2 class="section-title">Architecting Enterprise Reliability</h2>
+            </div>
+
+            <div class="glass-card">
+                <p style="font-size: 1.1rem; color: var(--text-muted); line-height: 1.8;">
+                    I combine core mainframe legacy system proficiency with forward-looking AWS cloud knowledge. Formally trained in core IBM Mainframe stack at Vidushi Gyanpeeth, I build reliable batch jobs, optimized queries, and data processing workflows. My hands-on operational background has given me sharp communication skills and the agility to thrive in fast-paced production environments.
+                </p>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">2025</div>
+                        <div class="stat-label">B.Tech IT Graduate</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">7.0</div>
+                        <div class="stat-label">Academic CGPA</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Mainframe Core Tech</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">AWS</div>
+                        <div class="stat-label">Cloud Practitioner</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Added Competitive Advantage Section (Boosts Portfolio Appeal) -->
+        <section id="advantages">
+            <div class="section-header">
+                <div class="section-subtitle"><i data-lucide="zap"></i> 02 — Why Hire Me</div>
+                <h2 class="section-title">Unique Value Proposition</h2>
+            </div>
+
+            <div class="value-grid">
+                <div class="glass-card value-card">
+                    <div class="value-icon"><i data-lucide="database"></i></div>
+                    <div>
+                        <h3 style="margin-bottom: 0.5rem; font-size: 1.1rem;">Legacy & Modern Hybrid</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">Proficient in legacy batch systems (COBOL/JCL/DB2) while possessing cloud knowledge (AWS EC2, RDS, VPC) to assist in hybrid cloud integration.</p>
+                    </div>
+                </div>
+
+                <div class="glass-card value-card">
+                    <div class="value-icon"><i data-lucide="shield-check"></i></div>
+                    <div>
+                        <h3 style="margin-bottom: 0.5rem; font-size: 1.1rem;">High Transaction Mindset</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">Understands mission-critical processing, VSAM file management, and CICS online transaction concepts where system uptime is paramount.</p>
+                    </div>
+                </div>
+
+                <div class="glass-card value-card">
+                    <div class="value-icon"><i data-lucide="message-square"></i></div>
+                    <div>
+                        <h3 style="margin-bottom: 0.5rem; font-size: 1.1rem;">Production Communication & SLA Focus</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">Experience at TTEC handling dynamic live channels trained me in critical problem isolation, clear technical logging, and SLA adherence.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Toolkit -->
+        <section id="skills">
+            <div class="section-header">
+                <div class="section-subtitle"><i data-lucide="code"></i> 03 — Technical Stack</div>
+                <h2 class="section-title">Skills & Capabilities</h2>
+            </div>
+
+            <div class="skills-grid">
+                <div class="glass-card skill-category">
+                    <div class="skill-category-title"><i data-lucide="server" style="color:var(--cyan)"></i> IBM Mainframe</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">COBOL</span>
+                        <span class="skill-tag">JCL</span>
+                        <span class="skill-tag">DB2</span>
+                        <span class="skill-tag">VSAM</span>
+                        <span class="skill-tag">CICS</span>
+                        <span class="skill-tag">z/OS Environment</span>
+                        <span class="skill-tag">IDCAMS</span>
+                        <span class="skill-tag">IEFBR14</span>
+                        <span class="skill-tag">IEBGENER</span>
+                        <span class="skill-tag">SORT Utilities</span>
+                    </div>
+                </div>
+
+                <div class="glass-card skill-category">
+                    <div class="skill-category-title"><i data-lucide="cloud" style="color:var(--cyan)"></i> Cloud & Databases</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS Cloud</span>
+                        <span class="skill-tag">EC2 & RDS</span>
+                        <span class="skill-tag">VPC Architecture</span>
+                        <span class="skill-tag">SQL & Relational DBs</span>
+                        <span class="skill-tag">Data Modeling</span>
+                    </div>
+                </div>
+
+                <div class="glass-card skill-category">
+                    <div class="skill-category-title"><i data-lucide="git-branch" style="color:var(--cyan)"></i> Languages & Tools</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Git & GitHub</span>
+                        <span class="skill-tag">YOLOv8 & OpenCV</span>
+                        <span class="skill-tag">VS Code</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects -->
+        <section id="projects">
+            <div class="section-header">
+                <div class="section-subtitle"><i data-lucide="layers"></i> 04 — Portfolio</div>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+
+            <div class="projects-grid">
+                <div class="glass-card project-card">
+                    <div>
+                        <h3 style="font-size: 1.3rem; margin-bottom: 0.75rem;">Mainframe Enterprise Application Suite</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">Comprehensive hands-on simulation covering COBOL batch processing, JCL job execution, DB2 query integration, and VSAM dataset manipulation.</p>
+                    </div>
+                    <div class="project-tags">
+                        <span class="project-tag">COBOL</span>
+                        <span class="project-tag">JCL</span>
+                        <span class="project-tag">DB2</span>
+                        <span class="project-tag">VSAM</span>
+                        <span class="project-tag">CICS</span>
+                    </div>
+                </div>
+
+                <div class="glass-card project-card">
+                    <div>
+                        <h3 style="font-size: 1.3rem; margin-bottom: 0.75rem;">AWS Three-Tier Scalable Architecture</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">Designed and deployed a resilient cloud infrastructure on AWS utilizing EC2 for app layer, RDS for data retention, inside isolated VPC public/private subnets.</p>
+                    </div>
+                    <div class="project-tags">
+                        <span class="project-tag">AWS</span>
+                        <span class="project-tag">EC2</span>
+                        <span class="project-tag">RDS</span>
+                        <span class="project-tag">VPC</span>
+                    </div>
+                </div>
+
+                <div class="glass-card project-card">
+                    <div>
+                        <h3 style="font-size: 1.3rem; margin-bottom: 0.75rem;">Real-time Fire Detection (YOLOv8)</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">High-accuracy computer vision application developed using Python and OpenCV, achieving 82.35% mAP with sub-3 second latency for real-time video feeds.</p>
+                    </div>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">YOLOv8</span>
+                        <span class="project-tag">OpenCV</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Journey -->
+        <section id="journey">
+            <div class="section-header">
+                <div class="section-subtitle"><i data-lucide="compass"></i> 05 — Experience & Education</div>
+                <h2 class="section-title">Career Milestones</h2>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2021 — 2025</div>
+                    <h3 style="font-size: 1.2rem;">Bachelor of Technology — Information Technology</h3>
+                    <p style="color: var(--text-dim); font-size: 0.9rem;">Aditya College of Engineering and Technology • CGPA 7.0</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">July 2025 — November 2025</div>
+                    <h3 style="font-size: 1.2rem;">Chat Sales Representative — TTEC</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.4rem;">Handled multi-channel customer communications, fast issue escalation, technical product explanations, and tight SLA compliance.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Certifications & Training</div>
+                    <h3 style="font-size: 1.1rem; color: var(--cyan);">AWS Certified Cloud Practitioner</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">Amazon Web Services</p>
+                    
+                    <h3 style="font-size: 1.1rem; color: var(--cyan);">IBM Mainframe Enterprise Training</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">Vidushi Gyanpeeth IT Training</p>
+                    
+                    <p style="color: var(--text-dim); font-size: 0.85rem;">Additional Certifications: NPTEL IoT • HackerRank Python • HackerRank Java</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" style="border-bottom: none;">
+            <div class="glass-card contact-box">
+                <div class="section-subtitle" style="justify-content: center;"><i data-lucide="mail"></i> 06 — Connect</div>
+                <h2 class="section-title" style="margin-bottom: 1rem;">Let's Build Something Dependable</h2>
+                <p style="color: var(--text-muted);">Available for Mainframe Developer, Software Engineer, and IT Enterprise roles.</p>
+
+                <div class="contact-links">
+                    <a href="mailto:ramaaruna2378@gmail.com" class="contact-link-btn">
+                        <i data-lucide="mail" style="color: var(--cyan)"></i> ramaaruna2378@gmail.com
+                    </a>
+                    <a href="tel:+919517995555" class="contact-link-btn">
+                        <i data-lucide="phone" style="color: var(--cyan)"></i> +91 9517995555
+                    </a>
+                    <div class="contact-link-btn">
+                        <i data-lucide="map-pin" style="color: var(--cyan)"></i> Hyderabad, India
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            © 2026 Tetali Ayyappa Venkata Manohar Reddy • Built with Cyber Matrix Canvas & Glassmorphic UI.
+        </div>
+    </footer>
+
+    <!-- Lucide Icons Script Initialization -->
+    <script>
+        lucide.createIcons();
+
+        // Canvas Dot Background Animation
+        const canvas = document.getElementById('dotsCanvas');
+        const ctx = canvas.getContext('2d');
+
+        let width = canvas.width = window.innerWidth;
+        let height = canvas.height = window.innerHeight;
+
+        window.addEventListener('resize', () => {
+            width = canvas.width = window.innerWidth;
+            height = canvas.height = window.innerHeight;
+            initDots();
+        });
+
+        class Dot {
+            constructor(x, y) {
+                this.x = x;
+                this.y = y;
+                this.baseRadius = 1.2;
+                this.radius = this.baseRadius;
+                this.color = '#38bdf8';
+                this.alpha = Math.random() * 0.4 + 0.1;
+                this.speed = Math.random() * 0.02 + 0.005;
+                this.step = Math.random() * Math.PI * 2;
+            }
+
+            update() {
+                this.step += this.speed;
+                this.alpha = (Math.sin(this.step) + 1) / 2 * 0.35 + 0.08;
+            }
+
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(56, 189, 248, ${this.alpha})`;
+                ctx.fill();
+            }
+        }
+
+        let dots = [];
+        function initDots() {
+            dots = [];
+            const spacing = 32;
+            for (let x = 0; x < width; x += spacing) {
+                for (let y = 0; y < height; y += spacing) {
+                    dots.push(new Dot(x, y));
+                }
+            }
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, width, height);
+            dots.forEach(dot => {
+                dot.update();
+                dot.draw();
+            });
+            requestAnimationFrame(animate);
+        }
+
+        initDots();
+        animate();
+    </script>
+</body>
+</html>
