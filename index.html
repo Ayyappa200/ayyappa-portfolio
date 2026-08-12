@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Tetali Ayyappa Venkata Manohar Reddy - Mainframe Developer and IT Graduate.">
+  <title>Tetali Ayyappa Venkata Manohar Reddy | Mainframe Developer</title>
+  <style>
+    :root {
+      --bg: #07111f;
+      --bg2: #0b1728;
+      --card: rgba(17, 31, 52, .78);
+      --text: #eef5ff;
+      --muted: #a8b7ca;
+      --accent: #55b8ff;
+      --accent2: #8b7cff;
+      --border: rgba(255,255,255,.10);
+      --max: 1120px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at 80% 10%, rgba(85,184,255,.12), transparent 30%),
+                  radial-gradient(circle at 15% 30%, rgba(139,124,255,.10), transparent 30%),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(92%, var(--max)); margin: auto; }
+    header {
+      position: sticky; top: 0; z-index: 20;
+      backdrop-filter: blur(16px);
+      background: rgba(7,17,31,.78);
+      border-bottom: 1px solid var(--border);
+    }
+    nav {
+      height: 72px; display: flex; align-items: center; justify-content: space-between;
+    }
+    .logo { font-weight: 800; letter-spacing: .5px; }
+    .logo span { color: var(--accent); }
+    .navlinks { display: flex; gap: 26px; font-size: .94rem; color: var(--muted); }
+    .navlinks a:hover { color: var(--text); }
+    .hero { min-height: 88vh; display: grid; place-items: center; padding: 90px 0 70px; }
+    .hero-grid { display: grid; grid-template-columns: 1.25fr .75fr; gap: 60px; align-items: center; }
+    .eyebrow { color: var(--accent); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; font-size: .82rem; }
+    h1 { font-size: clamp(2.6rem, 7vw, 5.4rem); line-height: 1.02; margin: 16px 0 22px; letter-spacing: -3px; }
+    h1 span { color: var(--accent); }
+    .hero p { color: var(--muted); max-width: 680px; font-size: 1.1rem; }
+    .buttons { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 30px; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: 12px 20px; border-radius: 12px; border: 1px solid var(--border);
+      background: var(--card); transition: .2s ease;
+    }
+    .btn.primary { background: var(--accent); color: #03101c; border-color: var(--accent); font-weight: 800; }
+    .btn:hover { transform: translateY(-2px); }
+    .profile-card {
+      border: 1px solid var(--border); background: linear-gradient(145deg, rgba(85,184,255,.10), rgba(139,124,255,.08));
+      border-radius: 28px; padding: 34px; box-shadow: 0 25px 80px rgba(0,0,0,.25);
+    }
+    .profile-orb {
+      width: 150px; height: 150px; border-radius: 50%; margin: 0 auto 24px;
+      display: grid; place-items: center; font-size: 3.2rem; font-weight: 900;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      color: #07111f;
+    }
+    .profile-card h3 { text-align: center; margin-bottom: 7px; }
+    .profile-card p { text-align: center; color: var(--muted); }
+    section { padding: 95px 0; }
+    .section-title { font-size: 2.2rem; margin-bottom: 10px; }
+    .section-subtitle { color: var(--muted); margin-bottom: 34px; }
+    .about { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .card {
+      background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 28px;
+    }
+    .card p { color: var(--muted); }
+    .stats { display: grid; grid-template-columns: repeat(2,1fr); gap: 14px; }
+    .stat strong { display: block; font-size: 1.55rem; color: var(--text); }
+    .stat span { color: var(--muted); font-size: .9rem; }
+    .skills { display: grid; grid-template-columns: repeat(4,1fr); gap: 14px; }
+    .skill { padding: 18px; border-radius: 15px; background: var(--card); border: 1px solid var(--border); }
+    .skill b { display: block; margin-bottom: 4px; }
+    .skill small { color: var(--muted); }
+    .projects { display: grid; grid-template-columns: repeat(2,1fr); gap: 22px; }
+    .project h3 { margin-bottom: 10px; }
+    .project p, .project li { color: var(--muted); }
+    .project ul { padding-left: 20px; margin-top: 10px; }
+    .timeline { border-left: 2px solid var(--border); padding-left: 25px; }
+    .timeline-item { position: relative; margin-bottom: 28px; }
+    .timeline-item::before {
+      content: ""; position: absolute; width: 11px; height: 11px; border-radius: 50%;
+      background: var(--accent); left: -32px; top: 9px; box-shadow: 0 0 0 5px rgba(85,184,255,.10);
+    }
+    .timeline-item span { color: var(--accent); font-size: .9rem; }
+    .contact { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+    .contact-item { padding: 18px 0; border-bottom: 1px solid var(--border); }
+    .contact-item small { color: var(--muted); display: block; }
+    footer { padding: 30px 0; border-top: 1px solid var(--border); color: var(--muted); text-align: center; }
+    .tag { display: inline-block; padding: 5px 10px; border-radius: 999px; background: rgba(85,184,255,.10); color: var(--accent); margin: 4px 3px 0 0; font-size: .82rem; }
+    @media (max-width: 850px) {
+      .hero-grid, .about, .contact, .projects { grid-template-columns: 1fr; }
+      .skills { grid-template-columns: repeat(2,1fr); }
+      .navlinks { display: none; }
+      h1 { letter-spacing: -2px; }
+    }
+    @media (max-width: 480px) { .skills { grid-template-columns: 1fr; } .hero { padding-top: 60px; } }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <a class="logo" href="#home">Ayyappa<span>.</span></a>
+      <div class="navlinks">
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a>
+        <a href="#education">Education</a><a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">Mainframe Developer • IT Graduate</div>
+      <h1>Tetali Ayyappa<br><span>Venkata Manohar Reddy</span></h1>
+      <p>
+        B.Tech Information Technology graduate focused on Mainframe Development,
+        SQL and cloud technologies. Trained in COBOL, JCL, DB2, VSAM and CICS,
+        with additional knowledge of AWS, SQL and basic Python.
+      </p>
+      <div class="buttons">
+        <a class="btn primary" href="#projects">View Projects</a>
+        <a class="btn" href="#contact">Contact Me</a>
+      </div>
+    </div>
+    <div class="profile-card">
+      <div class="profile-orb">AR</div>
+      <h3>Open to Opportunities</h3>
+      <p>Looking for Mainframe Developer and SQL-focused IT roles.</p>
+      <div style="margin-top:20px;text-align:center;">
+        <span class="tag">COBOL</span><span class="tag">JCL</span><span class="tag">DB2</span>
+        <span class="tag">VSAM</span><span class="tag">CICS</span><span class="tag">AWS</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-subtitle">A concise overview of my technical profile.</p>
+    <div class="about">
+      <div class="card">
+        <p>
+          I am an Information Technology graduate looking to start my career as a
+          Mainframe Developer. I have learned core Mainframe technologies including
+          COBOL, JCL, DB2, VSAM and CICS, along with SQL. I also have exposure to
+          AWS cloud services and basic Python programming.
+        </p>
+        <br>
+        <p>
+          I enjoy learning new technologies and solving technical problems, and I am
+          looking for an opportunity where I can apply my skills, learn from experienced
+          teams and grow as an IT professional.
+        </p>
+      </div>
+      <div class="stats">
+        <div class="card stat"><strong>2025</strong><span>B.Tech Graduate</span></div>
+        <div class="card stat"><strong>7.0</strong><span>CGPA</span></div>
+        <div class="card stat"><strong>5+</strong><span>Mainframe Technologies</span></div>
+        <div class="card stat"><strong>AWS</strong><span>Cloud Knowledge</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <h2 class="section-title">Technical Skills</h2>
+    <p class="section-subtitle">Technologies and tools I have learned and worked with.</p>
+    <div class="skills">
+      <div class="skill"><b>COBOL</b><small>Mainframe programming</small></div>
+      <div class="skill"><b>JCL</b><small>Job Control Language</small></div>
+      <div class="skill"><b>DB2</b><small>Mainframe database</small></div>
+      <div class="skill"><b>VSAM</b><small>File management</small></div>
+      <div class="skill"><b>CICS</b><small>Online transaction processing</small></div>
+      <div class="skill"><b>SQL</b><small>Queries & databases</small></div>
+      <div class="skill"><b>AWS</b><small>Cloud fundamentals</small></div>
+      <div class="skill"><b>Python</b><small>Basic programming</small></div>
+      <div class="skill"><b>Java</b><small>Programming fundamentals</small></div>
+      <div class="skill"><b>Git & GitHub</b><small>Version control</small></div>
+      <div class="skill"><b>z/OS</b><small>Mainframe environment</small></div>
+      <div class="skill"><b>Utilities</b><small>IDCAMS, SORT, IEBGENER & more</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <h2 class="section-title">Projects</h2>
+    <p class="section-subtitle">Selected academic and technical projects from my resume.</p>
+    <div class="projects">
+      <div class="card project">
+        <h3>🔥 Fire Detection System using YOLOv8</h3>
+        <p>Real-time fire and smoke detection system built with Python, YOLOv8 and OpenCV.</p>
+        <ul>
+          <li>Achieved 82.35% mAP using transfer learning and hyperparameter tuning.</li>
+          <li>Implemented real-time video processing with a response time under 3 seconds.</li>
+        </ul>
+        <div style="margin-top:15px"><span class="tag">Python</span><span class="tag">YOLOv8</span><span class="tag">OpenCV</span></div>
+      </div>
+      <div class="card project">
+        <h3>☁️ Three-Tier Web Architecture on AWS</h3>
+        <p>Scalable three-tier architecture designed and deployed on AWS using cloud best practices.</p>
+        <ul>
+          <li>Configured EC2 for web/application layers and RDS for the database layer.</li>
+          <li>Used VPC, public/private subnets, Internet Gateway and Security Groups for networking.</li>
+        </ul>
+        <div style="margin-top:15px"><span class="tag">AWS</span><span class="tag">EC2</span><span class="tag">RDS</span><span class="tag">VPC</span></div>
+      </div>
+      <div class="card project">
+        <h3>🖥️ Mainframe Development Training</h3>
+        <p>Hands-on learning across core IBM Mainframe technologies and z/OS concepts.</p>
+        <ul>
+          <li>COBOL programming, JCL and common z/OS utilities.</li>
+          <li>DB2, VSAM and CICS concepts for enterprise application development.</li>
+        </ul>
+        <div style="margin-top:15px"><span class="tag">COBOL</span><span class="tag">JCL</span><span class="tag">DB2</span><span class="tag">VSAM</span><span class="tag">CICS</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="container">
+    <h2 class="section-title">Education & Certifications</h2>
+    <p class="section-subtitle">Academic background and professional learning.</p>
+    <div class="timeline">
+      <div class="timeline-item">
+        <span>2021 – 2025</span>
+        <h3>Bachelor of Technology — Information Technology</h3>
+        <p>Aditya College of Engineering and Technology • CGPA: 7.0</p>
+      </div>
+      <div class="timeline-item"><h3>AWS Certified Cloud Practitioner</h3><p>Amazon Web Services (AWS)</p></div>
+      <div class="timeline-item"><h3>Introduction to Internet of Things (IoT)</h3><p>NPTEL</p></div>
+      <div class="timeline-item"><h3>Python HackerRank Certified</h3><p>HackerRank</p></div>
+      <div class="timeline-item"><h3>Java HackerRank Certified</h3><p>HackerRank</p></div>
+      <div class="timeline-item"><h3>IBM Mainframe IT Training</h3><p>Vidushi Gyanpeeth IT Training</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2 class="section-title">Let's Connect</h2>
+    <p class="section-subtitle">I am open to opportunities in Mainframe Development and related IT roles.</p>
+    <div class="contact">
+      <div class="card">
+        <div class="contact-item"><small>Email</small><a href="mailto:ramaaruna2378@gmail.com">ramaaruna2378@gmail.com</a></div>
+        <div class="contact-item"><small>Phone</small><a href="tel:+919517995555">+91 9517995555</a></div>
+        <div class="contact-item"><small>Location</small>Hyderabad, India</div>
+      </div>
+      <div class="card">
+        <h3>Career Focus</h3>
+        <p style="margin-top:10px">Mainframe Developer • COBOL • JCL • DB2 • VSAM • CICS • SQL</p>
+        <div style="margin-top:18px">
+          <span class="tag">Open to Work</span>
+          <span class="tag">IT Roles</span>
+          <span class="tag">Mainframe</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">© 2026 Tetali Ayyappa Venkata Manohar Reddy. Built for a professional IT portfolio.</div>
+</footer>
+</body>
+</html>
